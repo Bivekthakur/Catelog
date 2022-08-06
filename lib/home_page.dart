@@ -6,14 +6,16 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("catlog App"),
+      ),
+      body: Center(
         child: Container(
-        child: Text("welcome to $days  flutter class by $name",
-        style: TextStyle(color: Colors.black,
-        background: Colors.white,),),
+          child: Text("welcome to $days  flutter class by $name"),
+        ),
       ),
-      ),
+      drawer: Drawer(),
     );
   }
 }
